@@ -175,7 +175,7 @@ private:
 
 
 //----------------- LED Handling ------------------------
-#define PIXEL_COUNT 11
+#define PIXEL_COUNT 24
 #define PIXEL_PIN A7
 #define PIXEL_TYPE WS2812B
 
