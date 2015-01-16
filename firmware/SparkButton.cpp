@@ -123,7 +123,7 @@ void SparkButton::rainbow(uint8_t wait) {
   uint16_t i, j;
 
   for(j=0; j<256; j++) { // 1 cycle of all colors on wheel
-    for(i=0; i< 12; i++) {
+    for(i=0; i< ring.numPixels(); i++) {
       uint8_t WheelPos = ((i * 256 / ring.numPixels()) + j) & 255;
       if(WheelPos < 85) {
          ring.setPixelColor(i,ring.Color(WheelPos * 3, 255 - WheelPos * 3, 0));
